@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* main */
+.wrapper{
+    width: 700px;
+    height: 350px;
+    border: 1px solid grey;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+}
+
+@keyframes nextAnima{
+    0%{
+        /* opacity: 0; */
+        transform: scale(1.1) rotate(-10deg);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: scale(1.0) rotate(0deg);
+    }
+}
+
+@keyframes prevAnima{
+    0%{
+        /* opacity: 0; */
+        transform: scale(1.1) rotate(10deg);
+    }
+    100%{
+        /* opacity: 1; */
+        transform: scale(1.0) rotate(0deg);
+    }
+}
+
+
+
+/* slider */
+.wrapper .slider .item{
+    width: 100%;
+    height: 100%; 
+}
+.wrapper .slider .item img{
+    width: 100%
+}
+
+.active{
+    display: block;
+    
+}
+
+
+
+
+/* buttons */
+.wrapper .buttons{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.wrapper .buttons div{
+    display: inline-block;
+}
+
+.wrapper .buttons .next{
+    float: right;
+}
+
+.wrapper .buttons i{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: cadetblue;
+}
